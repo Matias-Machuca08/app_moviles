@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="warning">DuocUC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" size-md="8">
+        <h1>Iniciar Sesión</h1>
+        
+        <form (ngSubmit)="login()">
+          <ion-item>
+            <ion-label position="stacked">Correo de Usuario</ion-label>
+            <ion-input 
+              type="email" 
+              placeholder="Ingrese su correo de usuario" 
+              [(ngModel)]="email" 
+              name="email" 
+              required>
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Contraseña</ion-label>
+            <ion-input 
+              type="password" 
+              placeholder="Ingrese su contraseña" 
+              [(ngModel)]="password" 
+              name="password" 
+              required>
+            </ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label>
+              <a href="#" class="reset-password-link">Restablecer contraseña</a>
+            </ion-label>
+          </ion-item>
+
+          <ion-button 
+            expand="block" 
+            color="success" 
+            shape="round" 
+            type="submit">
+            Iniciar
+          </ion-button>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

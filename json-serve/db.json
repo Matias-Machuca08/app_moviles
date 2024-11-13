@@ -1,0 +1,91 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "rut": "21200071-k",
+      "nombre": "Luis",
+      "apellido": "Caba",
+      "rol": "Alumno",
+      "email": "lu.caba@duocuc.cl",
+      "password": "123456",
+      "asignaturasId": [1, 2, 3, 4]
+    },
+    {
+      "id": 2,
+      "rut": "18120771-k",
+      "nombre": "Patricio",
+      "apellido": "Yañez",
+      "rol": "Profesor",
+      "email": "pato.caba@duocuc.cl",
+      "password": "123456",
+      "asignaturasId": [1, 4]
+    },
+    {
+      "id": 3,
+      "rut": "18120771-k",
+      "nombre": "Jose",
+      "apellido": "Pino",
+      "rol": "Profesor",
+      "email": "jo.pino@duocuc.cl",
+      "password": "123456",
+      "asignaturasId": [2, 3]
+    }
+  ],
+
+  "asignaturas": [
+    {
+      "id": 1,
+      "siglas": "PGY4121",
+      "seccion": "002D",
+      "nombre": "Programacion moviles"
+    },
+    {
+      "id": 2,
+      "siglas": "HRY4131",
+      "seccion": "002D",
+      "nombre": "Arquitectura"
+    },
+    {
+      "id": 3,
+      "siglas": "CLY4131",
+      "seccion": "002D",
+      "nombre": "Ciberseguridad"
+    },
+    {
+      "id": 4,
+      "siglas": "PDY4131",
+      "seccion": "002D",
+      "nombre": "Consulta de Base de datos"
+    },
+    {
+      "id": 5,
+      "siglas": "PLY4131",
+      "seccion": "002D",
+      "nombre": "Consulta de Base de datos2"
+    }
+  ],
+
+  "asistencia": [
+    {
+      "id": 1,
+      "usuarioId": 1,
+      "asignaturaId": 1,
+      "fecha": "2024-11-01",
+      "presente": true
+    },
+    {
+      "id": 2,
+      "usuarioId": 1,
+      "asignaturaId": 2,
+      "fecha": "2024-11-02",
+      "presente": false
+    },
+    {
+      "id": 3,
+      "usuarioId": 2,
+      "asignaturaId": 1,
+      "fecha": "2024-11-01",
+      "presente": true
+    }
+  ]
+}

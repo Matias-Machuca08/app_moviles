@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cambiar Clave</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nueva Clave</ion-label>
+    <ion-input type="password" [(ngModel)]="nuevaClave"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Confirmar Clave</ion-label>
+    <ion-input type="password" [(ngModel)]="confirmarClave"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="cambiarClave()">Cambiar Clave</ion-button>
+</ion-content>

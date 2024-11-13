@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="warning">DuocUC - Profesor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" size-md="8">
+        <h1>Bienvenido, {{ profesorNombre }}</h1>
+        
+        <h2>Mis Asignaturas</h2>
+        <ion-list>
+          <ion-item *ngFor="let asignatura of asignaturas">
+            {{ asignatura.nombre }}
+
+            <!-- Botón para generar el QR -->
+            <ion-button expand="block" color="primary" (click)="generateQRCode(asignatura)">
+              Generar QR
+            </ion-button>
+
+            <!-- Mostrar el QR solo si se ha generado -->
+            <div *ngIf="qrText && selectedAsignatura === asignatura.nombre">
+              <qrcode [qrdata]="qrText" [width]="200"></qrcode>
+            </div>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

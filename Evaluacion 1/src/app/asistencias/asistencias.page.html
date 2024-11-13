@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mis Asistencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let asistencia of asistencias">
+      <ion-label>
+        <h2>{{ asistencia.asignatura }}</h2>
+        <p>Fecha: {{ asistencia.fecha }}</p>
+        <p>Estado: {{ asistencia.presente ? 'Presente' : 'Ausente' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
